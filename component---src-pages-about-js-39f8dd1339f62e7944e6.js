@@ -1,0 +1,2 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{"3XHS":function(e,t,n){"use strict";n.r(t),n.d(t,"default",(function(){return c}));var a=n("q1tI"),r=n.n(a),u=n("LbRr");function c(){return r.a.createElement("div",null,r.a.createElement(u.a,{headerText:"About Gatsby"}),r.a.createElement("p",null,"Wow gatsby bee so cool"))}},LbRr:function(e,t,n){"use strict";var a=n("q1tI"),r=n.n(a);t.a=function(e){return r.a.createElement("h1",null,e.headerText)}}}]);
+//# sourceMappingURL=component---src-pages-about-js-39f8dd1339f62e7944e6.js.map

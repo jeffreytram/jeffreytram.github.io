@@ -6,5 +6,6 @@
 
 module.exports = {
   /* Your site config here */
+  pathPrefix: "/Personal-Website-v2",
   plugins: [],
 }

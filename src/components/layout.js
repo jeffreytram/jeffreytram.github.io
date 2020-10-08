@@ -14,13 +14,12 @@ export default function Layout({ children }) {
       <header>
         <ul className={styles.navList}>
           <ListLink to="/">Projects</ListLink>
-          <ListLink to="/projects/">Experience</ListLink>
+          <ListLink to="">Experience</ListLink>
           <ListLink to="https://github.com/jeffreytram">GitHub</ListLink>
-          <ListLink to="/contact/">Resume</ListLink>
+          <ListLink to="">Resume</ListLink>
         </ul>
       </header>
       {children}
-      <hr />
     </div>
   )
 }

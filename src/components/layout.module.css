@@ -6,10 +6,16 @@
 
 .navItem {
   display: inline-block;
-  margin-right: 3rem;
+  margin-right: 2vw;
 }
 
 .link {
   text-decoration: none;
   color: black;
 }
+
+@media (min-width: 600px) {
+  .navItem {
+    margin-left: 20px;
+  }
+} 

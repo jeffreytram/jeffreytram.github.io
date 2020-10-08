@@ -1,5 +1,4 @@
 import React from "react"
-import Header from "../components/header"
 import Layout from "../components/layout"
 import styles from "./projects.module.css"
 
@@ -19,9 +18,7 @@ const Project = props => (
 export default function Projects() {
   return (
     <Layout>
-      <Header
-        headerText="Projects"
-      />
+      <h1>Projects</h1>
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
       <Project
         card="https://source.unsplash.com/random/200x200"

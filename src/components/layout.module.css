@@ -1,10 +1,15 @@
-.container {
-  background-color: white;
-  border-radius: 15px;
-  margin: 3rem auto;
-  padding: 15px;
-  max-width: 1000px;
-  -webkit-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 2px 2px 5px 0px rgba(0, 0, 0, 0.25);
+.navList {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.navItem {
+  display: inline-block;
+  margin-right: 3rem;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
 }

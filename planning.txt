@@ -13,6 +13,11 @@ General Notes:
 Starting development server
 - gatsby develop
 
+Deploying
+- npm run deploy
+
+
+
 Resources:
 
 Deploying website

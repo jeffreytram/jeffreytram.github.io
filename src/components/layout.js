@@ -13,6 +13,7 @@ export default function Layout({ children }) {
     <div className={styles.container}>
       <header>
         <ul className={styles.navList}>
+          <ListLink to="/">Involvement</ListLink>
           <ListLink to="/">Projects</ListLink>
           <ListLink to="">Experience</ListLink>
           <ListLink to="https://github.com/jeffreytram">GitHub</ListLink>

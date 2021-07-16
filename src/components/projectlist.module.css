@@ -10,24 +10,20 @@ img {
   margin-bottom: calc(40px + 10vw);
 }
 
-.projectInfo {
+.projectInfoContainer {
   width: 40%;
   float: left;
 }
 
+.projectInfo {
+  padding-right: 10px;
+}
+
 .mainImage {
-  width: 60%;
+  width: calc(60% - 2px);
 }
 
-.subImage1 {
-  width: 33%;
-}
-
-.subImage2 {
-  width: 33%;
-}
-
-.subImage3 {
+.subImage {
   width: 33%;
 }
 
@@ -47,11 +43,14 @@ img {
   text-decoration: none;
   color: black;
   white-space: nowrap;
+  background: none;
+  font: inherit;
 }
 
 .button:hover {
   background: black;
   color: white;
+  cursor: pointer;
 }
 
 @media (min-width: 700px) {

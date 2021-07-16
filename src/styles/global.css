@@ -4,7 +4,7 @@
   --text-size-m-h: calc(16px + 1vw);
   --text-size-subtitle: calc(20px + 1.5vw);
   --text-size-title: calc(24px + 2vw);
-  
+  --gray: gray;
 }
 
 html {

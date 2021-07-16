@@ -7,7 +7,7 @@ const Project = props => {
     <div className={styles.project}>
       <div className={styles.projectInfoContainer}>
         <div className={styles.projectInfo}>
-          <h2 style={{ marginBlockStart: "0", fontSize: "var(--text-size-m-h)" }}>{title}</h2>
+          <h2 style={{ fontSize: "var(--text-size-m-h)" }}>{title}</h2>
           <div style={{ fontSize: "var(--text-size-sm-p)" }}>
             <p>{description}</p>
             <button className={styles.button} href={livePage}>Live Page</button>

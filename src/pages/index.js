@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import InvolvementList from "../components/InvolvementList";
 import ProjectList from "../components/ProjectList";
 import styles from "./index.module.css";
 
@@ -29,6 +30,7 @@ export default function Home() {
       </div>
       {/*Projects*/}
       <HomeSection title="Involvement"/>
+      <InvolvementList/>
       <HomeSection title="Featured Projects"/>
       <ProjectList/>
       <HomeSection title="Experience"/>

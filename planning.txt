@@ -8,6 +8,18 @@
 8.17.20
 - Added filler content, pages, and basic layout
 
+
+
+
+TODO:
+- design involement layout
+- design experience layout
+- design content layout
+- fill website with content
+- add cool little animation / data viz stuff to home pages
+
+
+
 General Notes:
 
 Starting development server

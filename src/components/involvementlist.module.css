@@ -1,0 +1,28 @@
+.involvementList {
+  margin: 0 2vw;
+  display: grid;
+  grid-template-rows: repeat(1, 100px);
+  grid-template-columns: repeat(2, 50%);
+}
+
+.involvementHeading {
+  margin: 0;
+  font-size: var(--text-size-m-h);
+}
+
+.orgHeading {
+  margin: 0;
+  font-style: italic;
+}
+
+@media (min-width: 700px) {
+  .involvementList {
+    margin: 0 10vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .involvementList {
+    margin: 0 20vw;
+  }
+}

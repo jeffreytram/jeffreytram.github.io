@@ -1,9 +1,9 @@
 img {
-  outline: 1px solid black;
+  outline: 1px solid var(--black);
 }
 
 .projectList {
-  margin: 0 2vw;
+  margin: var(--page-margin);
 }
 
 .project {
@@ -36,31 +36,20 @@ img {
 
 .button {
   display: inline-block;
-  border: 1px solid gray;
+  border: 1px solid var(--gray);
   border-radius: 5px;
   padding: 2px 10px;
   margin-right: 10px;
   text-decoration: none;
-  color: black;
+  color: var(--black);
   white-space: nowrap;
   background: none;
   font: inherit;
 }
 
 .button:hover {
-  background: black;
-  color: white;
+  background: var(--green);
+  border-color: var(--green);
+  color: var(--white);
   cursor: pointer;
-}
-
-@media (min-width: 700px) {
-  .projectList {
-    margin: 0 10vw;
-  }
-}
-
-@media (min-width: 1100px) {
-  .projectList {
-    margin: 0 20vw;
-  }
 }

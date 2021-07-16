@@ -23,9 +23,9 @@ export default function Home() {
           <h3 style={{ marginBlockStart: "5px", fontSize: "var(--text-size-m-h)" }}>a Georgia Tech computer science graduate</h3>
         </div>
         <p style={{ margin: "20vh 0", fontSize: "var(--text-size-sm-h)" }}>
-          <span style={{ color: "#2d9cdb", fontWeight: "bold" }}>frontend developer </span>
+          <span style={{ color: "var(--blue)", fontWeight: "bold" }}>frontend developer </span>
           +
-          <span style={{ color: "#219653", fontWeight: "bold" }}> data visualization</span>
+          <span style={{ color: "var(--green)", fontWeight: "bold" }}> data visualization</span>
         </p>
       </div>
       {/*Projects*/}

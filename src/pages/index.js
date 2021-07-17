@@ -22,11 +22,20 @@ export default function Home() {
           <h1 style={{ marginBlockEnd: "5px", fontSize: "var(--text-size-title)" }}>Hello! I'm Jeffrey,</h1>
           <h3 style={{ marginBlockStart: "5px", fontSize: "var(--text-size-m-h)" }}>a Georgia Tech computer science graduate</h3>
         </div>
-        <p style={{ margin: "20vh 0", fontSize: "var(--text-size-sm-h)" }}>
-          <span style={{ color: "var(--blue)", fontWeight: "bold" }}>frontend developer </span>
-          +
-          <span style={{ color: "var(--green)", fontWeight: "bold" }}> data visualization</span>
-        </p>
+        <div style={{ margin: "20vh 0", fontSize: "var(--text-size-sm-h)" }}>
+          <p>
+            <span style={{ color: "var(--blue)", fontWeight: "bold" }}>frontend developer </span>
+            +
+            <span style={{ color: "var(--green)", fontWeight: "bold" }}> data visualization</span>
+          </p>
+          <div className={styles.linksContainer}>
+            <a href="https://github.com/jeffreytram" className={styles.logo}>
+              <img src={require('../../static/GitHub-Mark-32px.png')}/>
+              <img style={{ height: "32px" }} src={require('../../static/GitHub_Logo.png')}/>
+            </a>
+            <button className="button">Resume</button>
+          </div>
+        </div>
       </div>
       {/*Projects*/}
       <HomeSection title="Involvement"/>

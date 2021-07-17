@@ -10,8 +10,8 @@ const Project = props => {
           <h2 style={{ fontSize: "var(--text-size-m-h)" }}>{title}</h2>
           <div style={{ fontSize: "var(--text-size-sm-p)" }}>
             <p>{description}</p>
-            <button className={styles.button} href={livePage}>Live Page</button>
-            <button className={styles.button} href={github}>GitHub</button>
+            <button className="button" href={livePage}>Live Page</button>
+            <button className="button" href={github}>GitHub</button>
             <p><a href="">Learn more...</a></p>
           </div>
         </div>

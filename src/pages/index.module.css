@@ -1,3 +1,11 @@
 .titleText {
   text-align: center;
 }
+
+.logo {
+  vertical-align: middle;
+}
+
+.linksContainer > * {
+  margin: .5em;
+}

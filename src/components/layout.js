@@ -16,8 +16,6 @@ export default function Layout({ children }) {
           <ListLink to="/">Involvement</ListLink>
           <ListLink to="/">Projects</ListLink>
           <ListLink to="">Experience</ListLink>
-          <ListLink to="https://github.com/jeffreytram">GitHub</ListLink>
-          <ListLink to="">Resume</ListLink>
         </ul>
       </header>
       {children}

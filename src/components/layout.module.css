@@ -1,12 +1,10 @@
 .navList {
-  position: absolute;
-  top: 0;
-  right: 0;
+  text-align: center;
 }
 
 .navItem {
   display: inline-block;
-  margin-right: 2vw;
+  margin-right: 1em;
 }
 
 .link {
@@ -20,6 +18,11 @@
 }
 
 @media (min-width: 600px) {
+  .navList {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
   .navItem {
     margin-left: 10px;
   }

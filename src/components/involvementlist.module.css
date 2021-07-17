@@ -1,8 +1,12 @@
-.involvementList {
+.involvementListContainer {
   margin: var(--page-margin);
+}
+
+.involvementList {
+  width: 100%;
   display: grid;
-  grid-template-rows: repeat(1, 100px);
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 1em;
 }
 
 .involvementHeading {

@@ -7,8 +7,13 @@
 }
 
 .projectInfoContainer {
-  width: 40%;
+  width: 55%;
   float: left;
+}
+
+.projectTitle {
+  font-size: var(--text-size-m-h);
+  margin: .25em 0;
 }
 
 .projectInfo {
@@ -16,7 +21,16 @@
 }
 
 .mainImage {
-  width: 60%;
+  width: 45%;
   border-radius: 5px;
   box-shadow: 0 0 0 1px var(--black);
+}
+
+@media (min-width: 600px) {
+  .mainImage {
+    width: 60%;
+  }
+  .projectInfoContainer {
+    width: 40%;
+  }
 }

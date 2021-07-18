@@ -5,8 +5,18 @@
 .involvementList {
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-  gap: 1em;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2vw;
+}
+
+.involvement {
+  padding: 1.5em;
+  background: rgba( 255, 255, 255, 0.25 );
+  box-shadow: 0px 8px 32px 0 rgba( 31, 38, 135, 0.2 );
+  backdrop-filter: blur( 12.0px );
+  -webkit-backdrop-filter: blur( 12.0px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
 .involvementHeading {
@@ -17,4 +27,14 @@
 .orgHeading {
   margin: 0;
   font-style: italic;
+}
+
+.involvementBanner {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.involvementLinks {
+  margin-top: 2.5em;
+  text-align: center;
 }

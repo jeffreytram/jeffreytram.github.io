@@ -4,11 +4,15 @@ import styles from "./involvementlist.module.css"
 const Involvement = props => {
   const { title, org, bannerImage, description, link } = props;
   return (
-    <div>
+    <div className={styles.involvement}>
       <h2 className={styles.involvementHeading}>{title}</h2>
       <h4 className={styles.orgHeading}>{org}</h4>
       <p>{description}</p>
-      <img src={bannerImage} />
+      <img className={styles.involvementBanner} src={bannerImage} />
+      <div className={styles.involvementLinks}>
+        <button className="button">Link 1</button>
+        <button className="button">Link 2</button>
+      </div>
     </div>
   )
 };
@@ -20,14 +24,14 @@ export default function Involvements() {
         <Involvement
           title="Solar Forecasting"
           org="Big Data Big Impact Club"
-          // bannerImage={}
+          bannerImage={require('../../static/banner-template.jpg')}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           link=""
         />
         <Involvement
           title="BuzzBook"
           org="Student Government Association: IT Board"
-          // bannerImage={}
+          bannerImage={require('../../static/banner-template.jpg')}
           description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           link=""
         />

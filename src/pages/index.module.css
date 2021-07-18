@@ -9,3 +9,7 @@
 .linksContainer > * {
   margin: .5em;
 }
+
+.section {
+  margin: 10em 0;
+}

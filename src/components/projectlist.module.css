@@ -16,6 +16,7 @@
 }
 
 .mainImage {
-  width: calc(60% - 2px);
-  outline: 1px solid var(--black);
+  width: 60%;
+  border-radius: 5px;
+  box-shadow: 0 0 0 1px var(--black);
 }

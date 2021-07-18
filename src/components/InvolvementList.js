@@ -4,7 +4,7 @@ import styles from "./involvementlist.module.css"
 const Involvement = props => {
   const { title, org, bannerImage, description, link } = props;
   return (
-    <div className={styles.involvement}>
+    <div className="card">
       <h2 className={styles.involvementHeading}>{title}</h2>
       <h4 className={styles.orgHeading}>{org}</h4>
       <p>{description}</p>

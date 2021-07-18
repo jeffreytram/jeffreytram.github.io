@@ -4,7 +4,7 @@ import styles from "./projectlist.module.css"
 const Project = props => {
   const { title, description, github, livePage, mainImage } = props;
   return (
-    <div className={styles.project}>
+    <div className={`${styles.project} + card`}>
       <h2 className={styles.projectTitle}>{title}</h2>
       <div className={styles.projectInfoContainer}>
         <div className={styles.projectInfo}>

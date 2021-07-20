@@ -2,6 +2,7 @@ import React from "react";
 import Layout from "../components/layout";
 import InvolvementList from "../components/InvolvementList";
 import ProjectList from "../components/ProjectList";
+import AllProjectList from "../components/AllProjectList";
 import styles from "./index.module.css";
 
 const HomeSection = props => {
@@ -40,6 +41,7 @@ export default function Home() {
       </div>
       <HomeSection title="Involvement" content={<InvolvementList/>}/>
       <HomeSection title="Featured Projects" content={<ProjectList/>}/>
+      <HomeSection title="All Projects" content={<AllProjectList/>}/>
       <HomeSection title="Experience"/>
     </Layout>
   )

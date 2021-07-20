@@ -37,3 +37,7 @@ https://www.gatsbyjs.org/docs/how-gatsby-works-with-github-pages/
 
 Updating GitHub remote authentication
 https://medium.com/geekculture/how-to-change-your-github-remote-authentication-from-username-password-to-personal-access-token-64e527a766cf
+
+Fixing 'remote url mismatch' error after attempting to deploy - github authentication change
+- delete the /node_modules/.cache/gh-pages folder
+https://stackoverflow.com/questions/66701527/cant-deploy-react-app-with-gh-pages-remote-url-mismatch

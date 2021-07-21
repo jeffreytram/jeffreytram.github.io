@@ -6,9 +6,9 @@ import AllProjectList from "../components/AllProjectList";
 import styles from "./index.module.css";
 
 const HomeSection = props => {
-  const { title, content } = props;
+  const { id, title, content } = props;
   return (
-    <div className={styles.section}>
+    <div id={id} className={styles.section}>
       <h3 style={{ textAlign: "center", marginBlockEnd: "0", fontSize: "var(--text-size-subtitle)" }}>{title}</h3>
       <hr style={{ width: "30%", marginBottom: "5vw" }} />
       {content}
@@ -41,10 +41,10 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <HomeSection title="Involvement" content={<InvolvementList/>}/>
-      <HomeSection title="Featured Projects" content={<ProjectList/>}/>
+      <HomeSection id="involvement" title="Involvement" content={<InvolvementList/>}/>
+      <HomeSection id="projects" title="Featured Projects" content={<ProjectList/>}/>
       <HomeSection title="All Projects" content={<AllProjectList/>}/>
-      <HomeSection title="Experience"/>
+      <HomeSection id="experience" title="Experience"/>
     </Layout>
   )
 }

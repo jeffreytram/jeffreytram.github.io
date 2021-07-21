@@ -11,7 +11,9 @@ const Involvement = props => {
       <img className={styles.involvementBanner} src={bannerImage} alt={`${title} banner`}/>
       <div className={styles.involvementLinks}>
         {(githubLink) && (
-          <button className="button" href={githubLink}>View GitHub Repository</button>
+          <a href={githubLink}>
+            <button className="button">View GitHub Repository</button>
+          </a>
         )}
       </div>
     </div>

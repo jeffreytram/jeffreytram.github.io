@@ -19,37 +19,37 @@ export default function AllProjectList() {
         <Project
           title="UniDrive"
           mainImage={require('../../static/unidrive-logo.png')}
-          link="https://jeffreytram.github.io/unidrive.html"
+          link="https://jeffreytram.github.io/portfolio-v1/unidrive.html"
         />
         <Project
           title="Music Listening Times"
           mainImage={require('../../static/MLT-logo.png')}
-          link="https://jeffreytram.github.io/mlt.html"
+          link="https://jeffreytram.github.io/portfolio-v1/mlt.html"
         />
         <Project
           title="Love Machine Learning"
           mainImage={require('../../static/LML-logo.png')}
-          link="https://jeffreytram.github.io/lml.html"
+          link="https://jeffreytram.github.io/portfolio-v1/lml.html"
         />
         <Project
           title="Chicken Traders"
           mainImage={require('../../static/chicken-traders-logo.png')}
-          link="https://jeffreytram.github.io/chicken-traders.html"
+          link="https://jeffreytram.github.io/portfolio-v1/chicken-traders.html"
         />
         <Project
           title="Weather App"
           mainImage={require('../../static/weather-app-logo.png')}
-          link="https://jeffreytram.github.io/weatherapp.html"
+          link="https://jeffreytram.github.io/portfolio-v1/weatherapp.html"
         />
         <Project
           title="Personal Portfolio v1"
           mainImage={require('../../static/website-logo.png')}
-          link="https://jeffreytram.github.io/website.html"
+          link="https://jeffreytram.github.io/portfolio-v1/website.html"
         />
         <Project
           title="Personal Portfolio v1"
           mainImage={require('../../static/gm-logo.png')}
-          link="https://jeffreytram.github.io/gm.html"
+          link="https://jeffreytram.github.io/portfolio-v1/gm.html"
         />
       </div>
     </div>

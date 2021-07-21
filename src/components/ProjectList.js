@@ -40,14 +40,14 @@ export default function Projects() {
         livePage="https://music-listening-times.web.app/"
         github="https://github.com/jeffreytram/Music-Listening-Times"
         mainImage={require('../../static/MLT-logo.png')}
-        learnMore="https://jeffreytram.github.io/mlt.html"
+        learnMore="https://jeffreytram.github.io/portfolio-v1/mlt.html"
       />
       <Project
         title="UniDrive"
         description="Providing Google Drive users a single interface to interact with multiple different drives."
         github="https://github.com/jeffreytram/UniDrive"
         mainImage={require('../../static/unidrive-logo.png')}
-        learnMore="https://jeffreytram.github.io/unidrive.html"
+        learnMore="https://jeffreytram.github.io/portfolio-v1/unidrive.html"
       />
     </div>
   )

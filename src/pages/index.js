@@ -35,7 +35,7 @@ export default function Home() {
               <img src={require('../../static/GitHub-Mark-32px.png')} alt="GitHub logo"/>
               <img style={{ height: "32px" }} src={require('../../static/GitHub_Logo.png')} alt="GitHub logo text"/>
             </a>
-            <a href={require('../../static/Resume-Jeffrey-Tram.pdf')} >
+            <a href={require('../../static/Resume-Jeffrey-Tram.pdf')} target="_blank" rel="noreferrer">
               <button className="button" href={require('../../static/Resume-Jeffrey-Tram.pdf')} >Resume</button>
             </a>
           </div>
@@ -44,7 +44,6 @@ export default function Home() {
       <HomeSection id="involvement" title="Involvement" content={<InvolvementList/>}/>
       <HomeSection id="projects" title="Featured Projects" content={<ProjectList/>}/>
       <HomeSection title="All Projects" content={<AllProjectList/>}/>
-      <HomeSection id="experience" title="Experience"/>
     </Layout>
   )
 }

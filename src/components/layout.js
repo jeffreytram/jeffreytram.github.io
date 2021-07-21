@@ -11,7 +11,6 @@ import styles from "./layout.module.css"
 const navList = [
   {id: 'involvement', title: 'Involvement'},
   {id: 'projects', title: 'Projects'},
-  {id: 'experience', title: 'Experience'},
 ]
 
 export default function Layout({ children }) {

@@ -2,11 +2,11 @@ import React from "react"
 import styles from "./allprojectlist.module.css"
 
 const Project = props => {
-  const { title, mainImage } = props;
+  const { title, mainImage, link } = props;
   return (
     <div className={`${styles.project} + card`}>
-      <a href="">
-        <img className={styles.mainImage} src={mainImage} />
+      <a href={link}>
+        <img className={styles.mainImage} src={mainImage} alt={`${title} + banner`}/>
       </a>
     </div>
   )
@@ -19,30 +19,37 @@ export default function AllProjectList() {
         <Project
           title="UniDrive"
           mainImage={require('../../static/unidrive-logo.png')}
+          link="https://jeffreytram.github.io/unidrive.html"
+        />
+        <Project
+          title="Music Listening Times"
+          mainImage={require('../../static/MLT-logo.png')}
+          link="https://jeffreytram.github.io/mlt.html"
+        />
+        <Project
+          title="Love Machine Learning"
+          mainImage={require('../../static/LML-logo.png')}
+          link="https://jeffreytram.github.io/lml.html"
         />
         <Project
           title="Chicken Traders"
           mainImage={require('../../static/chicken-traders-logo.png')}
+          link="https://jeffreytram.github.io/chicken-traders.html"
         />
         <Project
-          title="Chicken Traders"
-          mainImage={require('../../static/chicken-traders-logo.png')}
+          title="Weather App"
+          mainImage={require('../../static/weather-app-logo.png')}
+          link="https://jeffreytram.github.io/weatherapp.html"
         />
         <Project
-          title="Chicken Traders"
-          mainImage={require('../../static/chicken-traders-logo.png')}
+          title="Personal Portfolio v1"
+          mainImage={require('../../static/website-logo.png')}
+          link="https://jeffreytram.github.io/website.html"
         />
         <Project
-          title="Chicken Traders"
-          mainImage={require('../../static/chicken-traders-logo.png')}
-        />
-        <Project
-          title="Chicken Traders"
-          mainImage={require('../../static/chicken-traders-logo.png')}
-        />
-        <Project
-          title="Chicken Traders"
-          mainImage={require('../../static/chicken-traders-logo.png')}
+          title="Personal Portfolio v1"
+          mainImage={require('../../static/gm-logo.png')}
+          link="https://jeffreytram.github.io/gm.html"
         />
       </div>
     </div>

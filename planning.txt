@@ -12,7 +12,6 @@
 
 
 TODO:
-- design involement layout
 - design experience layout
 - design content layout
 - fill website with content

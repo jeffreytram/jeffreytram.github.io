@@ -2,16 +2,17 @@ import React from "react"
 import styles from "./involvementlist.module.css"
 
 const Involvement = props => {
-  const { title, org, bannerImage, description, link } = props;
+  const { title, org, bannerImage, description, githubLink } = props;
   return (
     <div className="card">
       <h2 className={styles.involvementHeading}>{title}</h2>
       <h4 className={styles.orgHeading}>{org}</h4>
       <p>{description}</p>
-      <img className={styles.involvementBanner} src={bannerImage} />
+      <img className={styles.involvementBanner} src={bannerImage} alt={`${title} banner`}/>
       <div className={styles.involvementLinks}>
-        <button className="button">Link 1</button>
-        <button className="button">Link 2</button>
+        {(githubLink) && (
+          <button className="button" href={githubLink}>View GitHub Repository</button>
+        )}
       </div>
     </div>
   )
@@ -25,15 +26,14 @@ export default function Involvements() {
           title="Solar Forecasting"
           org="Big Data Big Impact Club"
           bannerImage={require('../../static/banner-template.jpg')}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          link=""
+          description="Visualizing the solar irradiance in Georgia to improve the electric grid efficiency from the predicted solar forecasting data"
+          githubLink="https://github.com/gt-big-data/solar-forecasting"
         />
         <Involvement
           title="BuzzBook"
-          org="Student Government Association: IT Board"
+          org="IT Board"
           bannerImage={require('../../static/banner-template.jpg')}
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          link=""
+          description="A one-stop course planning platform for students featuring a course catalog, grade distribution, and enrollment timeline"
         />
       </div>
     </div>

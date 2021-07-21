@@ -32,10 +32,12 @@ export default function Home() {
           </p>
           <div className={styles.linksContainer}>
             <a href="https://github.com/jeffreytram" className={styles.logo}>
-              <img src={require('../../static/GitHub-Mark-32px.png')}/>
-              <img style={{ height: "32px" }} src={require('../../static/GitHub_Logo.png')}/>
+              <img src={require('../../static/GitHub-Mark-32px.png')} alt="GitHub logo"/>
+              <img style={{ height: "32px" }} src={require('../../static/GitHub_Logo.png')} alt="GitHub logo text"/>
             </a>
-            <button className="button">Resume</button>
+            <a href={require('../../static/Resume-Jeffrey-Tram.pdf')} >
+              <button className="button" href={require('../../static/Resume-Jeffrey-Tram.pdf')} >Resume</button>
+            </a>
           </div>
         </div>
       </div>

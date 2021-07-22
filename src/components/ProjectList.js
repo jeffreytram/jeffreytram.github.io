@@ -8,25 +8,23 @@ const Project = props => {
       <h2 className={styles.projectTitle}>{title}</h2>
       <div className={styles.projectInfoContainer}>
         <div className={styles.projectInfo}>
-          <div style={{ fontSize: "var(--text-size-sm-p)" }}>
-            <p>{description}</p>
-            {(livePage) && (
-              <a href={livePage}>
-                <button className="button">Live Page</button>
+          <p>{description}</p>
+          {(livePage) && (
+            <a href={livePage}>
+              <button className="button">Live Page</button>
+            </a>
+          )}
+          {(github) && (
+              <a href={github}>
+                <button className="button">GitHub</button>
               </a>
-            )}
-            {(github) && (
-               <a href={github}>
-                 <button className="button">GitHub</button>
-               </a>
-            )}
-            {(learnMore) && (
-              <p><a href={learnMore}>Learn more...</a></p>
-            )}
-          </div>
+          )}
+          {(learnMore) && (
+            <p><a href={learnMore}>Learn more...</a></p>
+          )}
         </div>
+        <img className={styles.mainImage} src={mainImage} alt={`${title} banner`}/>
       </div>
-      <img className={styles.mainImage} src={mainImage} alt={`${title} banner`}/>
     </div>
   )
 };

@@ -12,9 +12,12 @@
 
 
 TODO:
+- solar forecasting banner image
+- buzzbook banner image
+- improve featured project banner
+  - product screen shot + banner image in one image/box
 - design experience layout
 - design content layout
-- fill website with content
 - add cool little animation / data viz stuff to home pages
 
 

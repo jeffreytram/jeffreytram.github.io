@@ -7,8 +7,9 @@
 }
 
 .projectInfoContainer {
-  width: 55%;
-  float: left;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 5fr;
 }
 
 .projectTitle {
@@ -18,19 +19,18 @@
 
 .projectInfo {
   padding-right: 10px;
+  font-size: var(--text-size-sm-p);
 }
 
 .mainImage {
-  width: 45%;
+  width: 100%;
   border-radius: 5px;
   box-shadow: 0 0 0 1px var(--black);
 }
 
-@media (min-width: 600px) {
-  .mainImage {
-    width: 60%;
-  }
+@media (min-width: 440px) {
   .projectInfoContainer {
-    width: 40%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
   }
 }

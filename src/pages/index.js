@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Layout from "../components/layout";
 import InvolvementList from "../components/InvolvementList";
 import ProjectList from "../components/ProjectList";
@@ -9,6 +10,10 @@ const HomeSection = props => {
   const { id, title, content } = props;
   return (
     <div id={id} className={styles.section}>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Jeffrey Tram</title>
+      </Helmet>
       <h3 style={{ textAlign: "center", marginBlockEnd: "0", fontSize: "var(--text-size-subtitle)" }}>{title}</h3>
       <hr style={{ width: "30%", marginBottom: "5vw" }} />
       {content}

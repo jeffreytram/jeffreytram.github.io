@@ -37,8 +37,8 @@ export default function Home() {
           </p>
           <div className={styles.linksContainer}>
             <a href="https://github.com/jeffreytram" className={styles.logo}>
-              <img src={require('../../static/GitHub-Mark-32px.png')} alt="GitHub logo"/>
-              <img style={{ height: "32px" }} src={require('../../static/GitHub_Logo.png')} alt="GitHub logo text"/>
+              <img src={require('../../static/icons/GitHub-Mark-32px.png')} alt="GitHub logo"/>
+              <img style={{ height: "32px" }} src={require('../../static/icons/GitHub_Logo.png')} alt="GitHub logo text"/>
             </a>
             <a href={require('../../static/Resume-Jeffrey-Tram.pdf')} target="_blank" rel="noreferrer">
               <button className="button" href={require('../../static/Resume-Jeffrey-Tram.pdf')} >Resume</button>

@@ -36,19 +36,19 @@ export default function Projects() {
     <div className={styles.projectList}>
       <Project
         title="Music Listening Times"
-        icon={require('../../static/mlt-icon.png')}
+        icon={require('../../static/icons/mlt-icon.png')}
         description="Visualizing over 2 years of personal listening data with searching, filtering, and interacting capabilties"
         livePage="https://music-listening-times.web.app/"
         github="https://github.com/jeffreytram/Music-Listening-Times"
-        mainImage={require('../../static/mlt-screenshot.png')}
+        mainImage={require('../../static/banners/mlt-screenshot.png')}
         learnMore="https://jeffreytram.github.io/portfolio-v1/mlt.html"
       />
       <Project
         title="UniDrive"
-        icon={require('../../static/unidrive-icon.png')}
+        icon={require('../../static/icons/unidrive-icon.png')}
         description="Providing Google Drive users a single interface to interact with multiple different drives"
         github="https://github.com/jeffreytram/UniDrive"
-        mainImage={require('../../static/unidrive-screenshot.png')}
+        mainImage={require('../../static/banners/unidrive-screenshot.png')}
         learnMore="https://jeffreytram.github.io/portfolio-v1/unidrive.html"
       />
     </div>

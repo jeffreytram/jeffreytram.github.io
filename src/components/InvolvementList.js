@@ -27,14 +27,14 @@ export default function Involvements() {
         <Involvement
           title="Solar Forecasting"
           org="Big Data Big Impact Club"
-          bannerImage={require('../../static/solarforecasting-banner-transparent.png')}
+          bannerImage={require('../../static/banners/solarforecasting-banner-transparent.png')}
           description="Visualizing the solar irradiance in Georgia to improve the electric grid efficiency from the predicted solar forecasting data"
           githubLink="https://github.com/gt-big-data/solar-forecasting"
         />
         <Involvement
           title="BuzzBook"
           org="IT Board"
-          bannerImage={require('../../static/buzzbook-banner.png')}
+          bannerImage={require('../../static/banners/buzzbook-banner.png')}
           description="A one-stop course planning platform for students featuring a course catalog, grade distribution, and enrollment timeline"
         />
       </div>

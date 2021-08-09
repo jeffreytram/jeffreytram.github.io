@@ -18,42 +18,42 @@ export default function AllProjectList() {
       <div className={styles.allProjectList}>
         <Project
           title="UniDrive"
-          mainImage={require('../../static/unidrive-logo.png')}
+          mainImage={require('../../static/banners/unidrive-logo.png')}
           link="https://jeffreytram.github.io/portfolio-v1/unidrive.html"
         />
         <Project
           title="Music Listening Times"
-          mainImage={require('../../static/MLT-logo.png')}
+          mainImage={require('../../static/banners/MLT-logo.png')}
           link="https://jeffreytram.github.io/portfolio-v1/mlt.html"
         />
         <Project
           title="Grade Manager v2.0"
-          mainImage={require('../../static/gm2-logo.png')}
+          mainImage={require('../../static/banners/gm2-logo.png')}
           link="https://jeffreytram.github.io/Grade-Manager/"
         />
         <Project
           title="Love Machine Learning"
-          mainImage={require('../../static/LML-logo.png')}
+          mainImage={require('../../static/banners/LML-logo.png')}
           link="https://jeffreytram.github.io/portfolio-v1/lml.html"
         />
         <Project
           title="Chicken Traders"
-          mainImage={require('../../static/chicken-traders-logo.png')}
+          mainImage={require('../../static/banners/chicken-traders-logo.png')}
           link="https://jeffreytram.github.io/portfolio-v1/chicken-traders.html"
         />
         <Project
           title="Weather App"
-          mainImage={require('../../static/weather-app-logo.png')}
+          mainImage={require('../../static/banners/weather-app-logo.png')}
           link="https://jeffreytram.github.io/portfolio-v1/weatherapp.html"
         />
         <Project
           title="Personal Portfolio v1"
-          mainImage={require('../../static/website-logo.png')}
+          mainImage={require('../../static/banners/website-logo.png')}
           link="https://jeffreytram.github.io/portfolio-v1/website.html"
         />
         <Project
           title="Personal Portfolio v1"
-          mainImage={require('../../static/gm-logo.png')}
+          mainImage={require('../../static/banners/gm-logo.png')}
           link="https://jeffreytram.github.io/portfolio-v1/gm.html"
         />
       </div>

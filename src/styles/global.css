@@ -51,6 +51,10 @@ html {
   border: 1px solid rgba( 255, 255, 255, 0.18 );
 }
 
+.icon {
+  width: calc(var(--text-size-m-h) - 5px);
+}
+
 @media (min-width: 700px) {
   :root {
     --page-margin: 0 10vw;

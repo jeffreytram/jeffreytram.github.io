@@ -27,7 +27,7 @@ export default function Involvements() {
         <Involvement
           title="Solar Forecasting"
           org="Big Data Big Impact Club"
-          bannerImage={require('../../static/solarforecasting-banner.png')}
+          bannerImage={require('../../static/solarforecasting-banner-transparent.png')}
           description="Visualizing the solar irradiance in Georgia to improve the electric grid efficiency from the predicted solar forecasting data"
           githubLink="https://github.com/gt-big-data/solar-forecasting"
         />

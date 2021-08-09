@@ -9,7 +9,7 @@
 .projectInfoContainer {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 3fr 5fr;
+  grid-template-rows: 1fr;
 }
 
 .projectTitle {
@@ -19,18 +19,29 @@
 
 .projectInfo {
   padding-right: 10px;
-  font-size: var(--text-size-sm-p);
+}
+
+.learnMore {
+  display: inline-block;
+}
+
+.learnMore:hover {
+  text-decoration: underline;
 }
 
 .mainImage {
   width: 100%;
   border-radius: 5px;
   box-shadow: 0 0 0 1px var(--black);
+  margin-top: 1em;
 }
 
-@media (min-width: 440px) {
+@media (min-width: 750px) {
   .projectInfoContainer {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
+  }
+  .mainImage {
+    margin-top: 0;
   }
 }

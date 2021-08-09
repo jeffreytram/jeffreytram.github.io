@@ -2,10 +2,10 @@ import React from "react"
 import styles from "./projectlist.module.css"
 
 const Project = props => {
-  const { title, description, github, livePage, mainImage, learnMore } = props;
+  const { title, icon, description, github, livePage, mainImage, learnMore } = props;
   return (
     <div className={`${styles.project} + card`}>
-      <h2 className={styles.projectTitle}>{title}</h2>
+      <h2 className={styles.projectTitle}><img className="icon" src={icon} alt={`${title} icon`}></img> {title}</h2>
       <div className={styles.projectInfoContainer}>
         <div className={styles.projectInfo}>
           <p>{description}</p>
@@ -20,7 +20,9 @@ const Project = props => {
               </a>
           )}
           {(learnMore) && (
-            <p><a href={learnMore}>Learn more...</a></p>
+            <a href={learnMore}>
+              <span className={styles.learnMore}>Learn more...</span>
+            </a>
           )}
         </div>
         <img className={styles.mainImage} src={mainImage} alt={`${title} banner`}/>
@@ -34,17 +36,19 @@ export default function Projects() {
     <div className={styles.projectList}>
       <Project
         title="Music Listening Times"
-        description="Visualizing over 2 yeras of personal listening data with searching, filtering, and interacting capabilties"
+        icon={require('../../static/mlt-icon.png')}
+        description="Visualizing over 2 years of personal listening data with searching, filtering, and interacting capabilties"
         livePage="https://music-listening-times.web.app/"
         github="https://github.com/jeffreytram/Music-Listening-Times"
-        mainImage={require('../../static/MLT-logo.png')}
+        mainImage={require('../../static/mlt-screenshot.png')}
         learnMore="https://jeffreytram.github.io/portfolio-v1/mlt.html"
       />
       <Project
         title="UniDrive"
-        description="Providing Google Drive users a single interface to interact with multiple different drives."
+        icon={require('../../static/unidrive-icon.png')}
+        description="Providing Google Drive users a single interface to interact with multiple different drives"
         github="https://github.com/jeffreytram/UniDrive"
-        mainImage={require('../../static/unidrive-logo.png')}
+        mainImage={require('../../static/unidrive-screenshot.png')}
         learnMore="https://jeffreytram.github.io/portfolio-v1/unidrive.html"
       />
     </div>

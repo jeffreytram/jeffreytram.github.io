@@ -15,7 +15,7 @@ const HomeSection = props => {
         <title>Jeffrey Tram</title>
       </Helmet>
       <h3 style={{ textAlign: "center", marginBlockEnd: "0", fontSize: "var(--text-size-subtitle)" }}>{title}</h3>
-      <hr style={{ width: "30%", marginBottom: "5vw" }} />
+      <hr style={{ width: "calc(150px + 15vw)", marginBottom: "30px" }} />
       {content}
     </div>
   )

@@ -27,6 +27,11 @@ export default function AllProjectList() {
           link="https://jeffreytram.github.io/portfolio-v1/mlt.html"
         />
         <Project
+          title="Grade Manager v2.0"
+          mainImage={require('../../static/gm2-logo.png')}
+          link="https://jeffreytram.github.io/Grade-Manager/"
+        />
+        <Project
           title="Love Machine Learning"
           mainImage={require('../../static/LML-logo.png')}
           link="https://jeffreytram.github.io/portfolio-v1/lml.html"

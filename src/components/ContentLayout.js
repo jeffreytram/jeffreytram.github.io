@@ -16,10 +16,14 @@ export default function ContentLayout(props) {
         })}
         <div className={styles.otherLinks}>
           {pageLink && (
-            <button className="button">Live Page</button>
+            <a href={pageLink}>
+              <button className="button">Live Page</button>
+            </a>
           )}
           {githubRepo && (
-            <button className="button">Github Repo</button>
+            <a href={githubRepo}>
+              <button className="button">Github Repo</button>
+            </a>
           )}
         </div>
         <img src={require(`../../static/snapshots/${snapshot}-snapshot.png`)} className={styles.snapshot}></img>

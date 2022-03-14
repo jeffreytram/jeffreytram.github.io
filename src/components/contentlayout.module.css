@@ -1,0 +1,40 @@
+h1 {
+  font-size: 50px;
+  margin-top: 2px;
+}
+
+.page {
+  margin: var(--page-margin);
+  margin-top: 8em;
+}
+
+.techIcon {
+  width: 40px;
+}
+
+.D3js {
+  box-sizing: border-box;
+  padding: 4px;
+}
+
+.ReactJS {
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.Firebase {
+  box-sizing: border-box;
+  padding: 2px;
+}
+
+.snapshot {
+  box-sizing: border-box;
+  margin: 2em 0;
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.otherLinks {
+  margin: 3em 0;
+}

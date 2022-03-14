@@ -9,9 +9,10 @@ import styles from "./layout.module.css"
 // )
 
 const navList = [
-  {id: 'involvement', title: 'Involvement'},
-  {id: 'projects', title: 'Projects'},
-]
+  { href: '/', title: 'Home' },
+  { href: '#involvement', title: 'Involvement' },
+  { href: '#projects', title: 'Projects' },
+];
 
 export default function Layout({ children }) {
   return (
@@ -21,7 +22,7 @@ export default function Layout({ children }) {
           {navList.map(link => {
             return (
               <li className={styles.navItem}>
-                <a href={`#${link.id}`} className={styles.link}>{link.title}</a>
+                <a href={link.href} className={styles.link}>{link.title}</a>
               </li>
             )
           })}

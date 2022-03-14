@@ -52,7 +52,7 @@ export default function AllProjectList() {
           link="https://jeffreytram.github.io/portfolio-v1/website.html"
         />
         <Project
-          title="Personal Portfolio v1"
+          title="Grade Manager"
           mainImage={require('../../static/banners/gm-logo.png')}
           link="https://jeffreytram.github.io/portfolio-v1/gm.html"
         />

@@ -23,7 +23,8 @@
     top: 0;
     right: 0;
   }
+
   .navItem {
-    margin-left: 10px;
+    margin: 0 10px;
   }
-} 
+}

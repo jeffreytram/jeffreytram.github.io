@@ -1,12 +1,5 @@
 import React from "react"
-import { Link } from "gatsby"
 import styles from "./layout.module.css"
-
-const ListLink = props => (
-  <li className={styles.navItem}>
-    <Link className={styles.link} to={props.to}>{props.children}</Link>
-  </li>
-)
 
 const navList = [
   { href: '/', title: 'Home' },
@@ -17,7 +10,6 @@ const navList = [
 export default function Layout({ children }) {
   return (
     <div className={styles.container}>
-      {/* <ListLink to="/gm">GM</ListLink> */}
       <header>
         <ul className={styles.navList}>
           {navList.map(link => {

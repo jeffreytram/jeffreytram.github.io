@@ -23,6 +23,7 @@
 
 .learnMore {
   display: inline-block;
+  text-decoration: none;
 }
 
 .learnMore:hover {

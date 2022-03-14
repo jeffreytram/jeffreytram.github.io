@@ -1,61 +1,42 @@
 import React from "react"
+import { Link } from "gatsby";
 import styles from "./allprojectlist.module.css"
 
 const Project = props => {
-  const { title, mainImage, link } = props;
+  const { title, banner, page } = props;
   return (
     <div className={`${styles.project} + card`}>
-      <a href={link}>
-        <img className={styles.mainImage} src={mainImage} alt={`${title} + banner`}/>
-      </a>
+      <Link to={`/${page}`}>
+        <img className={styles.mainImage} src={banner} alt={`${title} banner`} />
+      </Link>
     </div>
   )
 };
+
+const projectList = [
+  { title: 'UniDrive', banner: 'unidrive-logo.png', page: 'unidrive' },
+  { title: 'Music Listening Times', banner: 'MLT-logo.png', page: 'mlt' },
+  { title: 'Grade Manager v2.0', banner: 'gm2-logo.png', page: 'gm2' },
+  { title: 'Love Machine Learning', banner: 'LML-logo.png', page: 'lml' },
+  { title: 'Chicken Traders', banner: 'chicken-traders-logo.png', page: 'chicken-traders' },
+  { title: 'Weather App', banner: 'weather-app-logo.png', page: 'weather-app' },
+  { title: 'Personal Portfolio v1', banner: 'website-logo.png', page: 'portfolio-v1' },
+  { title: 'Grade Manager', banner: 'gm-logo.png', page: 'gm' },
+];
 
 export default function AllProjectList() {
   return (
     <div className={styles.allProjectListContainer}>
       <div className={styles.allProjectList}>
-        <Project
-          title="UniDrive"
-          mainImage={require('../../static/banners/unidrive-logo.png')}
-          link="https://jeffreytram.github.io/portfolio-v1/unidrive.html"
-        />
-        <Project
-          title="Music Listening Times"
-          mainImage={require('../../static/banners/MLT-logo.png')}
-          link="https://jeffreytram.github.io/portfolio-v1/mlt.html"
-        />
-        <Project
-          title="Grade Manager v2.0"
-          mainImage={require('../../static/banners/gm2-logo.png')}
-          link="https://jeffreytram.github.io/Grade-Manager/"
-        />
-        <Project
-          title="Love Machine Learning"
-          mainImage={require('../../static/banners/LML-logo.png')}
-          link="https://jeffreytram.github.io/portfolio-v1/lml.html"
-        />
-        <Project
-          title="Chicken Traders"
-          mainImage={require('../../static/banners/chicken-traders-logo.png')}
-          link="https://jeffreytram.github.io/portfolio-v1/chicken-traders.html"
-        />
-        <Project
-          title="Weather App"
-          mainImage={require('../../static/banners/weather-app-logo.png')}
-          link="https://jeffreytram.github.io/portfolio-v1/weatherapp.html"
-        />
-        <Project
-          title="Personal Portfolio v1"
-          mainImage={require('../../static/banners/website-logo.png')}
-          link="https://jeffreytram.github.io/portfolio-v1/website.html"
-        />
-        <Project
-          title="Grade Manager"
-          mainImage={require('../../static/banners/gm-logo.png')}
-          link="https://jeffreytram.github.io/portfolio-v1/gm.html"
-        />
+        {projectList.map(({title, banner, page}) => {
+          return (
+            <Project
+              title={title}
+              banner={require(`../../static/banners/${banner}`)}
+              page={page}
+            />
+          )
+        })}
       </div>
     </div>
   )

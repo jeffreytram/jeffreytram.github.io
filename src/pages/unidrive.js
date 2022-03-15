@@ -142,7 +142,8 @@ function UniDrive(props) {
             <li>Sprint 4: File organization</li>
             <li>Sprint 5: Persistence</li>
           </ul>
-          <img style={{ width: '100%' }} src={require('../../static/unidrive/unidrive-preview.png')}></img>
+          <img style={{ width: '100%' }} src={require('../../static/unidrive/unidrive-preview.png')}
+            alt="UniDrive application"></img>
         </Section>
       </ContentLayout>
     </div>

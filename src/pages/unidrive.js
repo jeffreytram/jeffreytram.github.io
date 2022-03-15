@@ -1,5 +1,10 @@
 import React from "react"
 import ContentLayout from "../components/ContentLayout";
+import { projectList } from "../content";
+
+const projectNames = projectList.map(proj => proj.title);
+const projectIndex = projectNames.indexOf('UniDrive');
+const project = projectList[projectIndex];
 
 function UniDrive(props) {
   const ListItem = ({ item, description }) => {
@@ -75,18 +80,7 @@ function UniDrive(props) {
   ];
   return (
     <div>
-      <ContentLayout
-        title="UniDrive"
-        period="January 2020 - November 2020"
-        description="UniDrive is a web application our team of six built
-        for our client at Sandia National Labs to provide Google Drive
-        users a central file organizational structure for all of their
-        Google Drive accounts."
-        tech={['HTML5', 'CSS3', 'JavaScript', 'ReactJS', 'AWS']}
-        githubRepo="https://github.com/jeffreytram/UniDrive"
-        snapshot="unidrive"
-        bgIcon="unidrive-icon"
-      >
+      <ContentLayout project={project}>
         <Section title="The Problem">
           <p>
             Google Drive and the Google office web applications are a

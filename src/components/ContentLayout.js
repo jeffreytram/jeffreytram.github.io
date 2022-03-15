@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "gatsby";
-import { projectList } from "./AllProjectList";
+import { projectList } from "../content";
 import Layout from "./layout";
 import styles from "./contentlayout.module.css"
 
 export default function ContentLayout(props) {
   const { title, period, description, tech, snapshot,
-    pageLink, githubRepo, bgIcon, children } = props;
+    pageLink, githubRepo, icon, children } = props.project;
 
   const projectNameList = projectList.map(project => project.title);
   const projectIndex = projectNameList.indexOf(title);
@@ -23,17 +23,17 @@ export default function ContentLayout(props) {
         <i>{period}</i>
         <h1>{title}</h1>
         <p>{description}</p>
-        {tech.map((icon) => {
+        {tech.map((lang) => {
           return <img
-            src={require(`../../static/icons/${icon}.png`)}
-            className={`${styles[icon]} ${styles.techIcon}`}
-            alt={`${icon} icon`}
+            src={require(`../../static/icons/${lang}.png`)}
+            className={`${styles[lang]} ${styles.techIcon}`}
+            alt={`${lang} icon`}
           >
           </img>
         })}
         <div className={styles.otherLinks}>
-          {bgIcon && (
-            <img src={require(`../../static/icons/${bgIcon}.png`)} className={styles.bgIcon} alt={`${title} icon`}></img>
+          {icon && (
+            <img src={require(`../../static/icons/${icon}`)} className={styles.bgIcon} alt={`${title} icon`}></img>
           )}
           {pageLink && (
             <a href={pageLink}>
@@ -46,7 +46,7 @@ export default function ContentLayout(props) {
             </a>
           )}
         </div>
-        <img src={require(`../../static/snapshots/${snapshot}-snapshot.png`)} className={styles.snapshot} alt={`${title} snapshot`}></img>
+        <img src={require(`../../static/snapshots/${snapshot}`)} className={styles.snapshot} alt={`${title} snapshot`}></img>
 
         {children}
 

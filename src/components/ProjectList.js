@@ -1,30 +1,41 @@
 import React from "react";
 import { Link } from "gatsby";
+import { projectList } from "../content";
 import styles from "./projectlist.module.css";
 
+const projectNames = projectList.map(proj => proj.title);
+
+const projectIndex1 = projectNames.indexOf('Music Listening Times 2.0');
+const project1 = projectList[projectIndex1];
+
+const projectIndex2 = projectNames.indexOf('UniDrive');
+const project2 = projectList[projectIndex2];
+
 const Project = props => {
-  const { title, icon, description, github, livePage, mainImage, page } = props;
+  const { title, icon, shortDescription, githubRepo, pageLink, snapshot, page } = props.project;
   return (
     <div className={`${styles.project} + card`}>
-      <h2 className={styles.projectTitle}><img className="icon" src={icon} alt={`${title} icon`}></img> {title}</h2>
+      <h2 className={styles.projectTitle}>
+        <img className="icon" src={require(`../../static/icons/${icon}`)} alt={`${title} icon`}></img> {title}
+      </h2>
       <div className={styles.projectInfoContainer}>
         <div className={styles.projectInfo}>
-          <p>{description}</p>
-          {(livePage) && (
-            <a href={livePage}>
+          <p>{shortDescription}</p>
+          {(pageLink) && (
+            <a href={pageLink}>
               <button className="button">Live Page</button>
             </a>
           )}
-          {(github) && (
-            <a href={github}>
+          {(githubRepo) && (
+            <a href={githubRepo}>
               <button className="button">GitHub</button>
             </a>
           )}
           {(page) && (
-              <Link className={styles.learnMore} to={`/${page}`}>Learn more...</Link>
+            <Link className={styles.learnMore} to={`/${page}`}>Learn more...</Link>
           )}
         </div>
-        <img className={styles.mainImage} src={mainImage} alt={`${title} banner`} />
+        <img className={styles.mainImage} src={require(`../../static/snapshots/${snapshot}`)} alt={`${title} banner`} />
       </div>
     </div>
   )
@@ -33,23 +44,8 @@ const Project = props => {
 export default function Projects() {
   return (
     <div className={styles.projectList}>
-      <Project
-        title="Music Listening Times 2.0"
-        icon={require('../../static/icons/mlt2-icon.png')}
-        description="Visualizing user's personal listening data with searching, filtering, and interacting capabilties"
-        livePage="https://music-listening-times-2.web.app/"
-        github="https://github.com/jeffreytram/Music-Listening-Times-v2.0"
-        mainImage={require('../../static/snapshots/mlt2-snapshot.png')}
-        page="mlt2"
-      />
-      <Project
-        title="UniDrive"
-        icon={require('../../static/icons/unidrive-icon.png')}
-        description="Providing Google Drive users a single interface to interact with multiple different drives"
-        github="https://github.com/jeffreytram/UniDrive"
-        mainImage={require('../../static/banners/unidrive-screenshot.png')}
-        page="unidrive"
-      />
+      <Project project={project1} />
+      <Project project={project2} />
     </div>
   )
 }

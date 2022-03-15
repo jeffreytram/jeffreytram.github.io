@@ -1,19 +1,15 @@
 import React from "react"
 import ContentLayout from "../components/ContentLayout";
+import { projectList } from "../content";
+
+const projectNames = projectList.map(proj => proj.title);
+const projectIndex = projectNames.indexOf('Grade Manager 2.0');
+const project = projectList[projectIndex];
 
 function GM2(props) {
   return (
     <div>
-      <ContentLayout
-        title="Grade Manager 2.0"
-        period="July 2020 - September 2020"
-        description="Track your progress in all of your classes as the semester rolls!"
-        tech={['HTML5', 'CSS3', 'JavaScript', 'ReactJS']}
-        pageLink="https://jeffreytram.github.io/Grade-Manager/"
-        githubRepo="https://github.com/jeffreytram/Grade-Manager"
-        snapshot="gm2"
-        bgIcon="gm2-icon"
-      >
+      <ContentLayout project={project}>
       </ContentLayout>
     </div>
   )

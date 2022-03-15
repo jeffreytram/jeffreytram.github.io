@@ -5,7 +5,7 @@ function PortfolioV1(props) {
   return (
     <div>
       <ContentLayout
-        title="Personal Website V1"
+        title="Personal Website v1"
         period="June 2019 - July 2019"
         description="My personal website serves as a place to showcase
         my works and talk about myself."

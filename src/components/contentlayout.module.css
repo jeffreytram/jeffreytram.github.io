@@ -48,3 +48,8 @@ h1 {
   opacity: .06;
   width: 250px;
 }
+
+.footer {
+  margin: 3em 0 2em 0;
+  height: 1em;
+}

@@ -14,6 +14,7 @@ const Project = props => {
 };
 
 const projectList = [
+  { title: "Music Listening Times 2.0", banner: 'mlt2-logo.png', page: 'mlt2'},
   { title: 'UniDrive', banner: 'unidrive-logo.png', page: 'unidrive' },
   { title: 'Music Listening Times', banner: 'MLT-logo.png', page: 'mlt' },
   { title: 'Grade Manager v2.0', banner: 'gm2-logo.png', page: 'gm2' },

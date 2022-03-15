@@ -3,10 +3,10 @@ import ContentLayout from "../components/ContentLayout";
 
 function MLT(props) {
   return (
-    <div className="about-container">
+    <div>
       <ContentLayout
         title="Music Listening Times"
-        period="Feburary 2020 - June 2020"
+        period="February 2020 - June 2020"
         description="Music Listening Times is an interactive data
         visualization of my personal monthly music listening habits
         over the past 2+ years and 50000+ songs!"
@@ -14,6 +14,7 @@ function MLT(props) {
         pageLink="https://music-listening-times.web.app/"
         githubRepo="https://github.com/jeffreytram/Music-Listening-Times"
         snapshot="mlt"
+        bgIcon="mlt-icon"
       >
       </ContentLayout>
     </div>

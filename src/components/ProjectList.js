@@ -2,12 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 import styles from "./projectlist.module.css";
 
-const ListLink = props => (
-  <li className={styles.navItem}>
-    <Link className={styles.link} to={props.to}>{props.children}</Link>
-  </li>
-);
-
 const Project = props => {
   const { title, icon, description, github, livePage, mainImage, page } = props;
   return (
@@ -40,13 +34,13 @@ export default function Projects() {
   return (
     <div className={styles.projectList}>
       <Project
-        title="Music Listening Times"
-        icon={require('../../static/icons/mlt-icon.png')}
-        description="Visualizing over 2 years of personal listening data with searching, filtering, and interacting capabilties"
-        livePage="https://music-listening-times.web.app/"
-        github="https://github.com/jeffreytram/Music-Listening-Times"
-        mainImage={require('../../static/banners/mlt-screenshot.png')}
-        page="mlt"
+        title="Music Listening Times 2.0"
+        icon={require('../../static/icons/mlt2-icon.png')}
+        description="Visualizing user's personal listening data with searching, filtering, and interacting capabilties"
+        livePage="https://music-listening-times-2.web.app/"
+        github="https://github.com/jeffreytram/Music-Listening-Times-v2.0"
+        mainImage={require('../../static/snapshots/mlt2-snapshot.png')}
+        page="mlt2"
       />
       <Project
         title="UniDrive"

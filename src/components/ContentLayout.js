@@ -4,9 +4,9 @@ import { projectList } from "../content";
 import Layout from "./layout";
 import styles from "./contentlayout.module.css"
 
-export default function ContentLayout(props) {
+export default function ContentLayout({ project, children }) {
   const { title, period, description, tech, snapshot,
-    pageLink, githubRepo, icon, children } = props.project;
+    pageLink, githubRepo, icon } = project;
 
   const projectNameList = projectList.map(project => project.title);
   const projectIndex = projectNameList.indexOf(title);
